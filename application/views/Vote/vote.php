@@ -50,7 +50,7 @@
 					<tr>
 						<th>Nome</th>
 						<th>Média neste mês</th>
-						<th colspan='2' style='text-align:center'>Ações</th>
+						<th style='text-align:center'>Ações</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -58,7 +58,6 @@
 					<tr class='item-funcionario' data-id="<?=$funcionario->cod_funcionario?>">
 						<td style='text-align:left'><?=$funcionario->nome?></td>
 						<td><?=$funcionario->media_votos?></td>
-						<td><button type='button' class='btn btn-info btn-editar-funcionario' data-id='<?=$funcionario->cod_funcionario?>'><i class='glyphicon glyphicon-edit'></i></button></td>
 						<td><button type='button' class='btn btn-danger btn-deletar-funcionario' data-id='<?=$funcionario->cod_funcionario?>'><i class='glyphicon glyphicon-trash'></i></button></td>
 					</tr>
 					<?php }?>
